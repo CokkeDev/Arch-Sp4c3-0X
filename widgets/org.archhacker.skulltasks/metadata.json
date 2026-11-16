@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "ArchHacker"
+            }
+        ],
+        "Category": "Windows and Tasks",
+        "Description": "Una calavera 8-bit por ventana: roja (no ocupada), verde (en uso), dorado oscuro (enfocada).",
+        "EnabledByDefault": true,
+        "Icon": "preferences-system-windows",
+        "Id": "org.archhacker.skulltasks",
+        "License": "MIT",
+        "Name": "Calaveras de ventanas",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

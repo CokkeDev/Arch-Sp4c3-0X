@@ -1,0 +1,33 @@
+# Discos y archivos de máquinas virtuales
+*.vmdk
+*.vmx
+*.vmxf
+*.vmsd
+*.nvram
+*.vmem
+*.vmss
+*.lck/
+*.iso
+*.qcow2
+*.vdi
+
+# Claves y secretos
+*key*
+!*keyring*
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+authorized_keys
+known_hosts
+.env
+*.secret
+
+# Respaldos y estado personal
+*.bak*
+*backup*
+.bash_history
+.zsh_history
+*.log
+target_ip

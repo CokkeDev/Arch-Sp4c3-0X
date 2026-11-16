@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=Orbital
+Description=Terminal verde sobre la Tierra ASCII de Orbiter
+Author=archhacker
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=orbital
+Theme-API=2.0
+QtVersion=6

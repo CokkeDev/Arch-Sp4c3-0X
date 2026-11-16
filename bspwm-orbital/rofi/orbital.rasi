@@ -1,0 +1,49 @@
+/* Orbital — rofi */
+* {
+    bg:      #0b0e17;
+    bg-alt:  #131826;
+    border:  #1d2333;
+    fg:      #e6e9ef;
+    dim:     #8a93a6;
+    accent:  #5b7cfa;
+
+    background-color: transparent;
+    text-color: @fg;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    width: 560px;
+    background-color: @bg;
+    border: 1px;
+    border-color: @border;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    spacing: 10px;
+    padding: 10px 12px;
+    background-color: @bg-alt;
+    border-radius: 8px;
+}
+prompt { text-color: @accent; }
+entry  { placeholder: "buscar…"; placeholder-color: @dim; }
+
+listview {
+    lines: 8;
+    margin: 12px 0 0 0;
+    spacing: 4px;
+}
+element {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+element selected {
+    background-color: @bg-alt;
+    text-color: @accent;
+    border: 0 0 0 0;
+}
+element-icon { size: 20px; margin: 0 10px 0 0; }
+element-text { text-color: inherit; }

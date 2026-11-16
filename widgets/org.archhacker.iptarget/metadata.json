@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "ArchHacker"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Caja para fijar la IP de la máquina víctima (verde si es válida, rojo con diana 8-bit si no).",
+        "EnabledByDefault": true,
+        "Icon": "preferences-system-network",
+        "Id": "org.archhacker.iptarget",
+        "License": "MIT",
+        "Name": "Objetivo IP",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
