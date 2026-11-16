@@ -1,17 +1,73 @@
-# Arch-Sp4c3-0X — Arch Linux para pentesting (KDE Plasma 6 + bspwm)
+<div align="center">
 
-Receta para **reconstruir** un Arch Linux de laboratorio de hacking ético con dos
-escritorios a elegir en el login:
+# Arch-Sp4c3-0X
 
-- **KDE Plasma 6** con estilo *Orbital*: paneles en píldora, acentos verdes de terminal.
-- **bspwm** : polybar en píldoras, kitty, rofi y atajos de teclado.
-- **Login (SDDM)** tipo terminal verde sobre una Tierra ASCII animada.
+**Arch Linux para pentesting con dos escritorios: KDE Plasma 6 y bspwm**
 
-No incluye el disco de la máquina virtual: solo scripts y configuraciones, para
-que la recrees desde la ISO oficial de Arch.
+Estética de terminal verde, barras en píldora y una Tierra ASCII animada de fondo.
+
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
+![KDE Plasma 6](https://img.shields.io/badge/KDE_Plasma_6-1D99F3?style=for-the-badge&logo=kde&logoColor=white)
+![bspwm](https://img.shields.io/badge/bspwm-0b0e17?style=for-the-badge&logo=linux&logoColor=39ff6e)
+![BlackArch](https://img.shields.io/badge/BlackArch-ff4d5e?style=for-the-badge)
+![Licencia MIT](https://img.shields.io/badge/licencia-MIT-39ff6e?style=for-the-badge)
+
+<img src="docs/screenshots/bspwm.png" alt="Escritorio bspwm con polybar en píldoras y terminales kitty" width="100%">
+
+</div>
 
 > ⚠️ **Solo para uso autorizado**: sistemas propios, laboratorios (HackTheBox,
 > TryHackMe) o pruebas con autorización por escrito.
+
+## Qué es
+
+Una **receta** para reconstruir un Arch Linux de laboratorio de hacking ético. No
+incluye el disco de la máquina virtual: solo scripts y configuraciones, para que lo
+recrees desde la ISO oficial de Arch.
+
+- **Login (SDDM)** tipo terminal verde sobre una Tierra ASCII animada, con selector de escritorio.
+- **KDE Plasma 6** con estilo *Orbital*: paneles en píldora, acentos verdes de terminal y Konsole a juego.
+- **bspwm**: polybar en píldoras, kitty, rofi, fondo animado y atajos de teclado.
+- **Herramientas de pentest** desde BlackArch, ordenadas por categoría en el menú.
+- **Privacidad** opcional: Tor, Tor Browser, uBlock Origin y nombre de equipo que no se envía a la red.
+
+## Capturas
+
+### Login
+
+Terminal verde sobre la escena Orbiter. Se elige la sesión con ↑/↓ y se entra con Enter.
+
+![Pantalla de login SDDM estilo terminal verde](docs/screenshots/login.png)
+
+### bspwm
+
+Barra en píldoras: red, VPN, escritorios, **objetivo** (IP de la máquina víctima),
+recursos, reloj y apagado. Funciones de shell para el flujo de trabajo:
+`settarget`, `extractPorts`, `mkt`, `whichsystem`.
+
+La captura de la portada muestra las terminales en mosaico; aquí, el menú de
+aplicaciones (rofi) sobre el fondo animado:
+
+![Menú rofi sobre la Tierra ASCII](docs/screenshots/rofi.png)
+
+### KDE Plasma 6 · Orbital
+
+Paneles flotantes en píldora con borde verde, seis escritorios, el logo de Arch y Konsole verde.
+
+![Escritorio KDE Plasma con estilo Orbital](docs/screenshots/plasma.png)
+
+## Atajos de bspwm
+
+| Acción | Atajo | Alternativa sin tecla Super |
+|---|---|---|
+| Terminal | `Super + Enter` | `Ctrl + Alt + T` |
+| Menú de apps | `Super + D` | `Alt + D` · clic derecho en el fondo |
+| Cerrar ventana | `Super + W` | `Alt + F4` |
+| Escritorio 1–6 | `Super + 1…6` | `Ctrl + Alt + 1…6` |
+| Pantalla completa / flotante | `Super + F` / `Super + S` | — |
+| Salir al login | `Super + Shift + Q` | botón rojo de la barra |
+
+Escribe `atajos` en cualquier terminal para ver la lista completa.
 
 ## Estructura
 
@@ -25,6 +81,7 @@ que la recrees desde la ISO oficial de Arch.
 | `widgets/` | Widgets propios de Plasma: objetivo IP y calaveras 8-bit por ventana. |
 | `plasma-orbital/` | Estilo Orbital para Plasma (colores, paneles, Konsole). Ver su README. |
 | `bspwm-orbital/` | Sesión bspwm + polybar + tema de login SDDM. Ver su README. |
+| `docs/screenshots/` | Capturas de este README. |
 | `packages-explicit.txt` | Paquetes instalados explícitamente. |
 
 ## Instalación (resumen)
@@ -40,6 +97,8 @@ que la recrees desde la ISO oficial de Arch.
 6. Escritorio bspwm y login: [`bspwm-orbital/README.md`](bspwm-orbital/README.md).
 7. Estilo Plasma Orbital: [`plasma-orbital/README.md`](plasma-orbital/README.md).
 8. Privacidad (opcional): `sudo bash scripts/privacy_setup.sh localhost`.
+
+> Las capturas usan valores de ejemplo (usuario `hacker`, IPs de laboratorio).
 
 ## Créditos
 
