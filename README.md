@@ -10,6 +10,9 @@ escritorios a elegir en el login:
 No incluye el disco de la máquina virtual: solo scripts y configuraciones, para
 que la recrees desde la ISO oficial de Arch.
 
+> ⚠️ **Solo para uso autorizado**: sistemas propios, laboratorios (HackTheBox,
+> TryHackMe) o pruebas con autorización por escrito.
+
 ## Estructura
 
 | Carpeta | Qué contiene |
