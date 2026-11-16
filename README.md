@@ -12,7 +12,7 @@ Estética de terminal verde, barras en píldora y una Tierra ASCII animada de fo
 ![BlackArch](https://img.shields.io/badge/BlackArch-ff4d5e?style=for-the-badge)
 ![Licencia MIT](https://img.shields.io/badge/licencia-MIT-39ff6e?style=for-the-badge)
 
-<img src="docs/screenshots/bspwm.png" alt="Escritorio bspwm con polybar en píldoras y terminales kitty" width="100%">
+<img src="docs/screenshots/bspwm-demo.gif" alt="Demostración animada del escritorio bspwm: terminales kitty, settarget y menú rofi sobre la Tierra ASCII" width="100%">
 
 </div>
 
@@ -45,10 +45,19 @@ Barra en píldoras: red, VPN, escritorios, **objetivo** (IP de la máquina víct
 recursos, reloj y apagado. Funciones de shell para el flujo de trabajo:
 `settarget`, `extractPorts`, `mkt`, `whichsystem`.
 
-La captura de la portada muestra las terminales en mosaico; aquí, el menú de
-aplicaciones (rofi) sobre el fondo animado:
+El GIF de la portada muestra la sesión en movimiento: fondo animado, terminales
+en mosaico, `settarget` actualizando la barra y el menú rofi.
 
-![Menú rofi sobre la Tierra ASCII](docs/screenshots/rofi.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/bspwm.png" alt="bspwm con terminales kitty en mosaico"></td>
+    <td><img src="docs/screenshots/rofi.png" alt="Menú rofi sobre las terminales"></td>
+  </tr>
+  <tr>
+    <td align="center">Terminales en mosaico</td>
+    <td align="center">Menú de aplicaciones (rofi)</td>
+  </tr>
+</table>
 
 ### KDE Plasma 6 · Orbital
 
