@@ -115,7 +115,7 @@ Escribe `atajos` en cualquier terminal para ver la lista completa.
   Se descarga e instala desde su repositorio; aquí no se redistribuyen sus archivos.
 - Texturas de la Tierra y la Luna usadas por Orbiter: NASA (dominio público).
 - **kvitals** — [yassine20011/kvitals](https://github.com/yassine20011/kvitals).
-- Idea del entorno bspwm: estilo popularizado por S4vitar.
+- Idea del entorno bspwm.
 - [BlackArch](https://blackarch.org) para las herramientas de pentest.
 
 ## Licencia
